@@ -1,0 +1,54 @@
+@import url('https://db.onlinewebfonts.com/c/90ca58f744f7cb5ecf0d8d2ace2a6a86?family=Magistral+W01+Book');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:root {
+  --text-light:rgba(255,255,255,0.8);
+  --deep-blue: #001531;
+  --deep-blue-900: #001D3D;
+  --deep-blue-800: #002855;
+  --accent: #f1997b;
+  --accent-light: #f4b59c;
+  --white: #fff;
+  --bp-sm: 640px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1280px;
+}
+
+body{
+    background-color: black;
+    line-height: 1.4;
+    font-style: italic;
+    font-family: 'Magistral';
+}
+
+a{
+    text-decoration:inherit;
+    color:#fff;
+    transition:color .25s
+}
+
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+    margin:0;
+    padding:0
+}
+
+body{
+    background:var(--deep-blue);
+    font-family:"Exo",system-ui,Arial,sans-serif;
+    color:var(--white);
+}

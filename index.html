@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luna Landing</title>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+/>
+  <link rel="stylesheet" href="./css/home.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/value-proposition.css">
+  <link rel="stylesheet" href="./css/context-aware.css">
+  <link rel="stylesheet" href="./css/demos__content.css">
+  <link rel="stylesheet" href="./css/features.css">
+  <link rel="stylesheet" href="./css/testimonials.css">
+  <link rel="stylesheet" href="./css/success-stories.css">
+  <link rel="stylesheet" href="./css/faq.css">
+  <link rel="stylesheet" href="./css/cta.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@600;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="navbar__inner">
+      <a href="#" class="navbar__logo">
+        <img src="https://lunabase.ai/logo-header-luna.png" alt="Luna logo">
+      </a>
+      <ul class="navbar__links" id="navLinks">
+        <li><a href="#" class="btn--primary">Free Trial</a></li>
+        <li><a href="#" class="navlink">How it Works</a></li>
+        <li>
+          <button class="navlink navlink--dropdown">
+            Solutions
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path fill="#fff" d="M17.919 8.18H6.079c-.96 0-1.44 1.16-.76 1.84l5.18 5.18c.83.83 2.18.83 3.01 0l5.18-5.18c.67-.68.19-1.84-.77-1.84z"/>
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button class="navlink navlink--dropdown">
+            Success Stories
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path fill="#fff" d="M17.919 8.18H6.079c-.96 0-1.44 1.16-.76 1.84l5.18 5.18c.83.83 2.18.83 3.01 0l5.18-5.18c.67-.68.19-1.84-.77-1.84z"/>
+            </svg>
+          </button>
+        </li>
+        <li><a href="#" class="navlink">Blog</a></li>
+        <li><a href="#" class="navlink">Luna Hackathon</a></li>
+      </ul>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+ <section class="hero">
+    <div class="hero__bg">
+      <div class="hero__img"></div>
+      <div class="hero__overlay"></div>
+      <div class="hero__grid"></div>
+    </div>
+    <div class="hero__container">
+      <h1 class="hero__heading">Dynamic Software<br/>Creation for Everyone</h1>
+      <p class="hero__subtitle">Your Idea. Our AI. Launch Faster.</p>
+      <p class="hero__note">
+        Luna created this initial website in less than
+        <span class="accent">30 minutes</span>
+      </p>
+      <div class="hero__cta">
+        <a href="#" class="btn--primary">Get Started for Free</a>
+        <a href="#" class="btn--outline">Watch Demo</a>
+      </div>
+      <ul class="hero__tags">
+        <li>AI software development</li>
+        <li>Lightning Fast Delivery</li>
+        <li>Production Ready Code</li>
+      </ul>
+    </div>
+    <div class="bottom-gradient"></div>
+  </section>
+  
+  <section id="value-proposition" class="section font-magistral">
+    <!-- Background layers -->
+    <div class="vp-bg">
+      <div class="vp-bg__solid"></div>
+      <div class="vp-bg__grid"></div>
+      <div class="vp-bg__circle vp-bg__circle--top-right"></div>
+      <div class="vp-bg__circle vp-bg__circle--bottom-left"></div>
+    </div>
+
+    <div class="container">
+      <!-- Header -->
+      <div class="vp-header">
+        <h2 class="vp-title">Lightning Fast Development</h2>
+        <p class="vp-subtitle">
+          Transform your ideas into reality in record time with our AI-powered platform
+        </p>
+      </div>
+
+      <!-- Cards -->
+      <div class="vp-cards">
+        <div class="vp-card">
+          <div class="vp-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                 stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+            </svg>
+          </div>
+          <div class="vp-card__content">
+            <h3 class="vp-card__title">Landing Page</h3>
+            <p class="vp-card__duration">5 minutes</p>
+          </div>
+        </div>
+
+        <div class="vp-card">
+          <div class="vp-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                 stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198
+                       .001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17
+                       0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12
+                       0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12
+                       12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681
+                       2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0
+                       0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+            </svg>
+          </div>
+          <div class="vp-card__content">
+            <h3 class="vp-card__title">Corporate Website</h3>
+            <p class="vp-card__duration">15 minutes</p>
+          </div>
+        </div>
+
+        <div class="vp-card">
+          <div class="vp-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                 stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5
+                       12l5.25-5.25m7.5-3-4.5 16.5"/>
+            </svg>
+          </div>
+          <div class="vp-card__content">
+            <h3 class="vp-card__title">Mobile App/MVP</h3>
+            <p class="vp-card__duration">2 hours</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ca-section font-magistral" id="context-aware">
+    <div class="ca-bg">
+      <div class="ca-bg__solid"></div>
+      <div class="ca-bg__pattern"></div>
+      <div class="ca-bg__circle ca-bg__circle--tr"></div>
+      <div class="ca-bg__circle ca-bg__circle--bl"></div>
+    </div>
+
+    <div class="ca-container">
+      <div class="ca-header">
+        <h2 class="ca-title">Context-Aware AI</h2>
+        <p class="ca-lead">
+          <strong>Precision in AI software development</strong>, delivering high-quality, context-aware responses without the noise.
+        </p>
+      </div>
+
+      <!-- Cards grid -->
+      <div class="ca-grid">
+        <article class="ca-card">
+          <div class="ca-card__icon-wrap">
+            <div class="ca-card__icon-bg"></div>
+            <svg class="ca-card__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                 stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 
+                       1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 
+                       12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 
+                       1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 
+                       1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"/>
+            </svg>
+          </div>
+          <h3 class="ca-card__title">Project Requirements</h3>
+          <p class="ca-card__text">
+            Luna analyzes your project requirements to understand the complete scope and objectives.
+          </p>
+          <ul class="ca-card__tags">
+            <li>Business goals</li>
+            <li>Technical specifications</li>
+            <li>User stories</li>
+          </ul>
+        </article>
+
+        <article class="ca-card">
+          <div class="ca-card__icon-wrap">
+            <div class="ca-card__icon-bg"></div>
+            <svg class="ca-card__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                 stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 
+                       1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 
+                       24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 
+                       1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 
+                       15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 
+                       0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 
+                       3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 
+                       0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/>
+            </svg>
+          </div>
+          <h3 class="ca-card__title">Feature Context</h3>
+          <p class="ca-card__text">
+            Understands relationships between features to ensure cohesive implementation.
+          </p>
+          <ul class="ca-card__tags">
+            <li>Dependencies</li>
+            <li>Integrations</li>
+            <li>User flows</li>
+          </ul>
+        </article>
+
+        <article class="ca-card">
+          <div class="ca-card__icon-wrap">
+            <div class="ca-card__icon-bg"></div>
+            <svg class="ca-card__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                 stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 
+                       0L9 9M3.75 20.25v-4.5m0 
+                       4.5h4.5m-4.5 0L9 15M20.25 
+                       3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 
+                       11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"/>
+            </svg>
+          </div>
+          <h3 class="ca-card__title">Cross-Feature Intelligence</h3>
+          <p class="ca-card__text">
+            Maintains consistency across features while optimizing for reusability.
+          </p>
+          <ul class="ca-card__tags">
+            <li>Shared components</li>
+            <li>Design patterns</li>
+            <li>Code standards</li>
+          </ul>
+        </article>
+
+        <article class="ca-card">
+          <div class="ca-card__icon-wrap">
+            <div class="ca-card__icon-bg"></div>
+            <svg class="ca-card__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                 stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M17.25 6.75L22.5 12l-5.25 
+                       5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/>
+            </svg>
+          </div>
+          <h3 class="ca-card__title">Smart Code Generation</h3>
+          <p class="ca-card__text">
+            Generates context-aware code that integrates seamlessly with existing features.
+          </p>
+          <ul class="ca-card__tags">
+            <li>API integration</li>
+            <li>State management</li>
+            <li>Error handling</li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- Footer note & CTA -->
+      <div class="ca-footer">
+        <p class="ca-footer__text">
+          With <span class="ca-highlight">smart context</span>, Luna writes better code, faster—without unnecessary processing or distractions.
+        </p>
+        <button class="ca-btn">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+   <section id="demos" class="demos">
+    <div class="demos__header">
+      <h2 class="demos__title">Watch Our Demos</h2>
+      <p class="demos__subtitle">
+        See how Luna builds complete solutions in record time
+      </p>
+    </div>
+
+    <div class="demos__grid">
+      <!-- Card 1 -->
+      <article class="demos__card">
+        <div class="demos__card-media">
+          <img
+            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&q=60"
+            alt="Website Demo"
+            class="demos__card-img"
+          />
+          <div class="demos__badge">
+            <svg xmlns="http://www.w3.org/2000/svg" class="demos__badge-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+            </svg>
+            <span>Build time: 15 minutes</span>
+          </div>
+        </div>
+        <div class="demos__card-info">
+          <h3 class="demos__card-title">Website Demo</h3>
+          <p class="demos__card-text">Create a fully functional website in minutes</p>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="demos__card">
+        <div class="demos__card-media">
+          <img
+            src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-1.2.1&auto=format&fit=crop&q=60"
+            alt="Mobile App Demo"
+            class="demos__card-img"
+          />
+          <div class="demos__badge">
+            <svg xmlns="http://www.w3.org/2000/svg" class="demos__badge-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+            </svg>
+            <span>Build time: 2 hours</span>
+          </div>
+        </div>
+        <div class="demos__card-info">
+          <h3 class="demos__card-title">Mobile App Demo</h3>
+          <p class="demos__card-text">Build a native mobile application</p>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="demos__card">
+        <div class="demos__card-media">
+          <img
+            src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-1.2.1&auto=format&fit=crop&q=60"
+            alt="Commerce Platform Demo"
+            class="demos__card-img"
+          />
+          <div class="demos__badge">
+            <svg xmlns="http://www.w3.org/2000/svg" class="demos__badge-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+            </svg>
+            <span>Build time: 1 hour</span>
+          </div>
+        </div>
+        <div class="demos__card-info">
+          <h3 class="demos__card-title">Commerce Platform Demo</h3>
+          <p class="demos__card-text">Launch your e-commerce platform</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="demos__cta">
+      <a href="#" class="demos__btn demos__btn--primary">
+        Start Free and Build Now
+      </a>
+    </div>
+  </section>
+
+   <section id="features" class="features">
+    <!-- background layers -->
+    <div class="features__bg">
+      <div class="features__overlay"></div>
+      <div class="features__pattern"></div>
+      <div class="features__blob features__blob--top-right"></div>
+      <div class="features__blob features__blob--bottom-left"></div>
+    </div>
+
+    <div class="features__inner container">
+      <!-- header -->
+      <header class="features__header">
+        <h2 class="features__title">Powerful Features</h2>
+        <p class="features__subtitle">
+          Experience the next generation of AI software development
+        </p>
+      </header>
+
+      <!-- grid of cards -->
+      <div class="features__grid">
+        <!-- card 1 -->
+        <article class="features__card">
+          <div class="features__icon-wrapper">
+            <svg class="features__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25
+                   12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813
+                   2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5
+                   4.5 0 00-3.09 3.09z"/>
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0
+                   00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0
+                   002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0
+                   002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0
+                   00-2.456 2.456z"/>
+            </svg>
+          </div>
+          <h3 class="features__card-title">Intelligent</h3>
+          <p class="features__card-text">
+            Advanced AI algorithms that understand your requirements and generate optimal solutions.
+          </p>
+        </article>
+
+        <!-- card 2 -->
+        <article class="features__card">
+          <div class="features__icon-wrapper">
+            <svg class="features__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3.75 13.5L14.25 2.25L12 10.5H20.25L9.75
+                   21.75L12 13.5H3.75z"/>
+            </svg>
+          </div>
+          <h3 class="features__card-title">Lightning-Fast</h3>
+          <p class="features__card-text">
+            Generate complete, production-ready code in minutes, not days or weeks.
+          </p>
+        </article>
+
+        <!-- card 3 -->
+        <article class="features__card">
+          <div class="features__icon-wrapper">
+            <svg class="features__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21 7.5L12 2.25L3 7.5m18 0L12 12.75M21 7.5v9l-9
+                   5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"/>
+            </svg>
+          </div>
+          <h3 class="features__card-title">Comprehensive</h3>
+          <p class="features__card-text">
+            End-to-end solution covering everything from frontend to backend, including documentation.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials section font-magistral">
+    <div class="testimonials__bg"></div>
+    <div class="testimonials__pattern"></div>
+
+    <div class="container">
+      <header class="testimonials__header text-center">
+        <h2 class="heading-2 text-white">What Our Users Say</h2>
+        <p class="text-xl text-white-80 max-w-3xl mx-auto">
+          Whether you're a developer, designer, or entrepreneur, Luna makes building software effortless for everyone.
+        </p>
+      </header>
+
+      <div class="testimonials__slider-wrapper">
+        <!-- Prev/Next outside Slick so chúng ta custom được vị trí -->
+        <button class="slick-prev" aria-label="Previous testimonial">‹</button>
+        <button class="slick-next" aria-label="Next testimonial">›</button>
+
+        <div class="testimonials-slider">
+          <!-- slide 1 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="chat-icon">💬</div>
+              <blockquote class="testimonial-text">
+                "We've seen a dramatic improvement in our delivery timelines since implementing Luna in our workflow."
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="avatar">E</div>
+                <div class="author-info">
+                  <p class="name">Emily</p>
+                  <p class="role">Product Manager</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="chat-icon">💬</div>
+              <blockquote class="testimonial-text">
+                "We've seen a dramatic improvement in our delivery timelines since implementing Luna in our workflow."
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="avatar">E</div>
+                <div class="author-info">
+                  <p class="name">Emily</p>
+                  <p class="role">Product Manager</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- slide 2 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="chat-icon">💬</div>
+              <blockquote class="testimonial-text">
+                "Luna made app development so easy that even as a non-tech user, I was able to create my own app without any hassle!"
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="avatar">R</div>
+                <div class="author-info">
+                  <p class="name">Rachel</p>
+                  <p class="role">Marketing</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- slide 3 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="chat-icon">💬</div>
+              <blockquote class="testimonial-text">
+                "Thanks to Luna, we built our MVP quickly and efficiently, allowing us to showcase our vision to investors."
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="avatar">R</div>
+                <div class="author-info">
+                  <p class="name">Ruby</p>
+                  <p class="role">Founder</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="success-stories" class="success-stories section">
+    <div class="success-stories__inner container">
+      <header class="success-stories__header text-center">
+        <h2 class="success-stories__title">Success Stories</h2>
+        <p class="success-stories__subtitle">
+          Discover how companies are transforming their businesses using Luna's AI-powered development platform
+        </p>
+      </header>
+
+      <div class="success-stories__grid">
+        <!-- Card 1 -->
+        <article class="story-card">
+          <a href="/mvp-3hours" class="story-card__link">
+            <div class="story-card__media">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop"
+                   alt="MVP in 3 Hours"
+                   class="story-card__img">
+              <span class="story-card__tag">Rapid MVP Development</span>
+            </div>
+            <div class="story-card__body">
+              <div class="story-card__labels">
+                <span class="story-card__label">Startup</span>
+                <span class="story-card__label">Basic</span>
+              </div>
+              <h3 class="story-card__title">MVP in 3 Hours</h3>
+              <p class="story-card__excerpt">
+                Hey! Lucy's job marketplace platform MVP built in just 3 hours using Luna's AI-powered development.
+              </p>
+              <div class="story-card__meta">
+                <span class="story-card__meta-item">⏱ 5 min read</span>
+                <span class="story-card__meta-item">👁 1.2k views</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="story-card">
+          <a href="/case-study" class="story-card__link">
+            <div class="story-card__media">
+              <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=600&fit=crop"
+                   alt="Website Upgrade in 1 Day"
+                   class="story-card__img">
+              <span class="story-card__tag">Website Transformation</span>
+            </div>
+            <div class="story-card__body">
+              <div class="story-card__labels">
+                <span class="story-card__label">Enterprise IT</span>
+                <span class="story-card__label">Intermediate</span>
+              </div>
+              <h3 class="story-card__title">Website Upgrade in 1 Day</h3>
+              <p class="story-card__excerpt">
+                IT Site's complete website transformation, boosting performance by 46% in just one day.
+              </p>
+              <div class="story-card__meta">
+                <span class="story-card__meta-item">⏱ 7 min read</span>
+                <span class="story-card__meta-item">👁 2.5k views</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="story-card">
+          <a href="/nanosoft-case-study" class="story-card__link">
+            <div class="story-card__media">
+              <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=800&h=600&fit=crop"
+                   alt="Nanosoft Deal Success"
+                   class="story-card__img">
+              <span class="story-card__tag">Enterprise Success</span>
+            </div>
+            <div class="story-card__body">
+              <div class="story-card__labels">
+                <span class="story-card__label">Enterprise IT</span>
+                <span class="story-card__label">Advanced</span>
+              </div>
+              <h3 class="story-card__title">Nanosoft Deal Success</h3>
+              <p class="story-card__excerpt">
+                How Luna helped Nanosoft win a major enterprise deal by delivering complex features 30X faster.
+              </p>
+              <div class="story-card__meta">
+                <span class="story-card__meta-item">⏱ 10 min read</span>
+                <span class="story-card__meta-item">👁 3.8k views</span>
+              </div>
+            </div>
+          </a>
+        </article>
+      </div>
+
+      <div class="success-stories__footer text-center">
+        <a href="/case-studies" class="btn--link">
+          View All Case Studies&nbsp;→
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq section">
+    <div class="container">
+      <!-- Header -->
+      <div class="faq__header text-center">
+        <h2 class="heading-2 text-white">Frequently Asked Questions</h2>
+        <p class="faq__subtitle text-white-80">
+          Find answers to common questions about Luna
+        </p>
+      </div>
+
+      <!-- List of questions -->
+      <div class="faq__list">
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>How does Luna's AI software development work?</span>
+            <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+            </svg>
+          </button>
+          <div class="faq__answer">
+            Luna phân tích yêu cầu của bạn bằng mô hình AI tiên tiến, tạo ra kiến trúc frontend/backend
+            và sinh mã nguồn hoàn chỉnh, sẵn sàng triển khai.
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>What types of projects can I build with Luna?</span>
+            <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+            </svg>
+          </button>
+          <div class="faq__answer">
+            Bạn có thể xây dựng từ website tĩnh, web app động, mobile app đến các hệ thống backend
+            phức tạp – Luna đều hỗ trợ tự động hóa.
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>Is the generated code production-ready?</span>
+            <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+            </svg>
+          </button>
+          <div class="faq__answer">
+            Có. Luna sinh ra code theo chuẩn best practices, có cấu trúc rõ ràng, comment đầy đủ
+            và có thể deploy thẳng lên production.
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <button class="faq__question" aria-expanded="false">
+            <span>How does Luna ensure accuracy in code?</span>
+            <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+            </svg>
+          </button>
+          <div class="faq__answer">
+            Luna tích hợp test tự động và kiểm tra linting ngay khi sinh mã, đồng thời soạn sẵn
+            unit tests để bạn dễ dàng validate tính đúng đắn.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta" class="cta section font-magistral">
+  <!-- background layers -->
+  <div class="cta__bg">
+    <div class="cta__overlay"></div>
+    <div class="cta__pattern"></div>
+    <div class="cta__blob cta__blob--tl"></div>
+    <div class="cta__blob cta__blob--br"></div>
+  </div>
+
+  <div class="cta__inner container">
+    <div class="cta__content text-center">
+      <div class="cta__icon-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+             stroke-width="1.5" stroke="currentColor" aria-hidden="true"
+             class="cta__icon">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98
+               14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96
+               5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6
+               6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0
+               0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09
+               15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24
+               2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0
+               4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/>
+        </svg>
+      </div>
+
+      <h2 class="cta__title heading-2 text-white">
+        Ready to Build Without Limits?
+      </h2>
+      <p class="cta__subtitle text-xl text-white/80 mb-8">
+        Start creating amazing software with Luna today. No credit card required.
+      </p>
+
+      <div class="cta__buttons grid grid-cols-1 sm:grid-cols-4 gap-4 mb-4">
+        <button class="cta__btn">For Enterprises</button>
+        <button class="cta__btn">For Partners</button>
+        <button class="cta__btn">For Developers</button>
+        <button class="cta__btn">For Startups</button>
+      </div>
+
+      <p class="cta__note text-white/60 text-sm">
+        Choose the program that best fits your needs
+      </p>
+    </div>
+  </div>
+
+  <div class="cta__fade"></div>
+</section>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <footer id="footer" class="footer section font-magistral">
+  <div class="footer__inner container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="/" class="footer__logo-link">
+         <img
+  src="https://lunabase.ai/logo-header-luna.png"
+  alt="Luna Logo"
+  className="footer__logo"
+/>
+        </a>
+        <p class="footer__tagline">
+          Dynamic Software Creation for Everyone
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__title">Solutions</h4>
+        <ul class="footer__list">
+          <li><a href="/enterprises">Enterprises</a></li>
+          <li><a href="/partners">Partners</a></li>
+          <li><a href="/startups">Startups</a></li>
+          <li><a href="/developers">Developers</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__title">Success Stories</h4>
+        <ul class="footer__list">
+          <li><a href="/case-studies">Case Studies</a></li>
+          <li><a href="/showcase">Showcase Projects</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__title">Get Started</h4>
+        <ul class="footer__list">
+          <li><a href="#demos">Watch a Demo</a></li>
+          <li><a href="/request-demo">Request a Demo</a></li>
+          <li><a href="/trial">Free Trial</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__title">Resources</h4>
+        <ul class="footer__list">
+          <li><a href="/documents">Documentation</a></li>
+          <li><a href="/blog">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__title">About</h4>
+        <ul class="footer__list">
+          <li><a href="/get-in-touch">Get in Touch</a></li>
+          <li><a href="/referral-partner">Referral Program</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__copyright">
+        <span>© 2025 Luna Base Inc.</span>
+        <span>2501 North Harwood Street Suite 1900, Dallas, TX 75201-1664</span>
+        <a href="mailto:contact@lunabase.ai">contact@lunabase.ai</a>
+      </div>
+      <div class="footer__legal">
+        <a href="/privacy">Privacy Policy</a>
+        <span class="footer__sep">•</span>
+        <a href="/terms">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script>
+    $(document).ready(function(){
+  $('.testimonials-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    arrows: true,
+    dots: true,
+    prevArrow: $('.slick-prev'),
+    nextArrow: $('.slick-next'),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: { slidesToShow: 2 }
+      },
+      {
+        breakpoint: 640,
+        settings: { slidesToShow: 1 }
+      }
+    ]
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  const items = document.querySelectorAll('.faq__item');
+  items.forEach(item => {
+    const btn = item.querySelector('.faq__question');
+    btn.addEventListener('click', () => {
+      const isOpen = item.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
+    });
+  });
+});
+  </script>
+</body>
+</html>

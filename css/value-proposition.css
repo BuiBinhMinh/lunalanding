@@ -1,0 +1,112 @@
+.section {
+  position: relative;
+  overflow: hidden;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+.font-magistral {
+  font-family: 'Magistral';
+}
+
+.vp-bg {
+  position: absolute; inset: 0;
+}
+.vp-bg__solid {
+  position: absolute; inset: 0;
+  background: var(--deep-blue);
+}
+.vp-bg__grid {
+  position: absolute; inset: 0;
+  opacity: 0.03;
+}
+.vp-bg__circle {
+  position: absolute;
+  width: clamp(200px, 40vw, 500px);
+  height: clamp(200px, 40vw, 500px);
+  border-radius: 50%;
+  opacity: 0.08;
+  filter: blur(100px);
+}
+.vp-bg__circle--top-right {
+  top: 0; right: -10%;
+}
+.vp-bg__circle--bottom-left {
+  bottom: -10%; left: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 6rem) 1rem;
+}
+
+.vp-header {
+  text-align: center;
+  margin-bottom: clamp(2rem, 5vw, 4rem);
+}
+.vp-title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  margin-bottom: 1rem;
+}
+.vp-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: var(--text-light);
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.vp-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: clamp(1rem, 2vw, 2rem);
+}
+
+.vp-card {
+  position: relative;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: clamp(1.5rem, 3vw, 2rem);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.vp-card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.vp-card__icon {
+  position: absolute;
+  top: -1.25rem;
+  left: 1rem;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+  padding: 0.75rem;
+  border-radius: 50%;
+  transition: transform .3s ease;
+}
+.vp-card:hover .vp-card__icon {
+  transform: scale(1.1);
+}
+.vp-card__icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--white);
+}
+
+.vp-card__content {
+  margin-top: clamp(2rem, 5vw, 2.5rem);
+  text-align: center;
+}
+.vp-card__title {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.vp-card__duration {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700;
+  background: linear-gradient(90deg, var(--white) 0%, var(--accent-light) 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}

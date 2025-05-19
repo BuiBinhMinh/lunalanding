@@ -1,0 +1,165 @@
+@import url('https://db.onlinewebfonts.com/c/90ca58f744f7cb5ecf0d8d2ace2a6a86?family=Magistral+W01+Book');
+.ca-section {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(3rem, 8vw, 6rem) 1rem;
+}
+.font-magistral {
+  font-family: "magistral";
+}
+
+.ca-bg { position:absolute; inset:0; }
+.ca-bg__solid {
+  position:absolute; inset:0;
+  background: var(--deep-blue);
+}
+.ca-bg__pattern {
+  position:absolute; inset:0;
+  opacity: 0.03;
+}
+.ca-bg__circle {
+  position:absolute;
+  width: clamp(150px, 30vw, 400px);
+  height: clamp(150px, 30vw, 400px);
+  border-radius: 50%;
+  opacity: 0.08;
+  filter: blur(100px);
+}
+.ca-bg__circle--tr {
+  top: 10%; right: -10%;
+  background: var(--accent);
+}
+.ca-bg__circle--bl {
+  bottom: -10%; left: 10%;
+}
+
+.ca-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.ca-header {
+  text-align: center;
+  margin-bottom: clamp(2rem, 5vw, 4rem);
+}
+.ca-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 1rem;
+}
+.ca-lead {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: var(--text-light);
+  max-width: 48rem;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.ca-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap: clamp(1rem, 2vw, 2rem);
+}
+
+.ca-card {
+  position: relative;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: clamp(1.5rem, 3vw, 2rem);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.ca-card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.ca-card__icon-wrap {
+  position: relative;
+  /* width: fit-content; */
+  margin: 0 auto;
+}
+.ca-card__icon-bg {
+  position: absolute; inset:0;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+  border-radius: 50%;
+  opacity: 0.2;
+  filter: blur(20px);
+  transition: opacity .3s ease;
+}
+.ca-card:hover .ca-card__icon-bg {
+  opacity: 0.3;
+}
+.ca-card__icon {
+  position: relative;
+  width: clamp(2rem, 5vw, 3rem);
+  height: clamp(2rem, 5vw, 3rem);
+  color: var(--accent);
+  display: block;
+  margin: 0 auto;
+  transition: transform .3s ease;
+}
+.ca-card:hover .ca-card__icon {
+  transform: scale(1.1);
+}
+
+/* --------------- Card Content --------------- */
+.ca-card__title {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-weight: 700;
+  margin: 1rem 0 0.5rem;
+  text-align: center;
+}
+.ca-card__text {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  color: var(--text-light);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.ca-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  list-style: none;
+}
+.ca-card__tags li {
+  background: rgba(241,153,123,0.1);
+  color: var(--accent);
+  padding: 0.4rem 0.8rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  border: 1px solid rgba(241,153,123,0.2);
+}
+
+/* --------------- Footer & CTA --------------- */
+.ca-footer {
+  text-align: center;
+  margin-top: clamp(2rem, 5vw, 4rem);
+}
+.ca-footer__text {
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}
+.ca-highlight {
+  color: var(--accent);
+  font-weight: 700;
+}
+.ca-btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+  color: var(--white);
+  font-weight: 700;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  border: none;
+  cursor: pointer;
+  transition: transform .25s ease, opacity .25s ease;
+}
+.ca-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
