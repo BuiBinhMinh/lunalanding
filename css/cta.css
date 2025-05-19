@@ -4,7 +4,6 @@
   padding: clamp(4rem, 10vh, 8rem) 1rem;
 }
 
-/* backgrounds & blobs (giữ nguyên) */
 .cta__bg { position: absolute; inset: 0; z-index: 0; }
 .cta__overlay { position: absolute; inset: 0; background: var(--deep-blue); }
 .cta__pattern { position: absolute; inset: 0; opacity: 0.03; }
@@ -12,8 +11,6 @@
 .cta__blob--tl { top:10%; left:10%; width:16rem; height:16rem; }
 .cta__blob--br { bottom:10%; right:10%; width:24rem; height:24rem; animation-delay:2s; }
 @keyframes floatY { 0%,100%{transform:translateY(0)}50%{transform:translateY(2rem)}}
-
-/* inner container: max-width linh hoạt */
 .cta__inner {
   position: relative;
   z-index: 1;
@@ -22,24 +19,20 @@
   text-align: center;
 }
 
-/* icon */
 .cta__icon-wrapper { margin-bottom: 1rem; }
 .cta__icon { width: 4rem; height: 4rem; color: var(--accent); }
-
-/* title & subtitle */
 .cta__title {
   margin-bottom: 0.5rem;
-  font-style: italic;            /* thêm italic giống mẫu */
+  font-style: italic;
   font-size: clamp(2rem, 5vw, 3rem);
 }
 .cta__subtitle {
   margin-bottom: 2rem;
-  font-style: italic;            /* thêm italic */
+  font-style: italic;
   font-size: clamp(1rem, 2.5vw, 1.25rem);
   color: rgba(255,255,255,0.8);
 }
 
-/* nút outline */
 .cta__buttons { margin-bottom: 1rem; }
 .cta__btn {
   background: transparent;
@@ -57,14 +50,12 @@
   border-color: rgba(255,255,255,0.6);
 }
 
-/* dòng ghi chú */
 .cta__note {
   font-style: italic;
   font-size: clamp(0.875rem, 2vw, 1rem);
   color: rgba(255,255,255,0.6);
 }
 
-/* bottom fade */
 .cta__fade {
   position: absolute;
   bottom: 0; left: 0; right: 0;
@@ -73,7 +64,6 @@
   z-index: 0;
 }
 
-/* responsive: đảm bảo nút luôn đủ khoảng cách */
 @media (max-width: 640px) {
   .cta__buttons { grid-template-columns: 1fr; }
   .cta__btn { width: 100%;  margin-bottom: .4rem; }

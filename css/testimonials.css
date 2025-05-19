@@ -81,8 +81,6 @@
 }
 .slick-prev { left: -1.5rem; }
 .slick-next { right: -1.5rem; }
-
-/* Slick dots */
 .slick-dots {
   bottom: -2rem;
 }
@@ -118,7 +116,6 @@
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-/* Chat icon */
 .chat-icon {
   position: absolute;
   top: 1rem;
@@ -134,7 +131,6 @@
   z-index: 1;
 }
 
-/* Text */
 .testimonial-text {
   font-size: clamp(1rem, 2.5vw, 1.125rem);
   color: rgba(255,255,255,0.8);
@@ -177,7 +173,6 @@
   margin: 0;
 }
 
-/* Responsive */
 @media (max-width: 767px) {
   .slick-prev,
   .slick-next {

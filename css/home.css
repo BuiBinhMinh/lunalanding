@@ -1,5 +1,5 @@
 .navbar {
-  padding: 2rem 1rem;                        /* ban đầu: cao */
+  padding: 2rem 1rem;
   transition: background .5s ease, padding .5s ease;
   background: transparent;
   background-color: var(--deep-blue);

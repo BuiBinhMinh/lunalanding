@@ -10,7 +10,6 @@
   margin: 0 auto;
 }
 
-/* Grid cột */
 .footer__grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -24,7 +23,6 @@
   .footer__col { grid-column: span 1; }
 }
 
-/* Logo & tagline */
 .footer__logo {
   display: block;
   height: 2rem;
@@ -40,14 +38,12 @@
   color: rgba(255,255,255,0.8);
 }
 
-/* Tiêu đề cột */
 .footer__title {
   font-size: 1.125rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
 }
 
-/* Danh sách link */
 .footer__list {
   list-style: none;
   padding: 0;
@@ -65,7 +61,6 @@
   color: var(--accent);
 }
 
-/* Bottom row */
 .footer__bottom {
   margin-top: 3rem;
   padding-top: 2rem;

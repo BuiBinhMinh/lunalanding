@@ -104,7 +104,6 @@
   transform: scale(1.1);
 }
 
-/* --------------- Card Content --------------- */
 .ca-card__title {
   font-size: clamp(1rem, 2.5vw, 1.25rem);
   font-weight: 700;
@@ -133,7 +132,6 @@
   border: 1px solid rgba(241,153,123,0.2);
 }
 
-/* --------------- Footer & CTA --------------- */
 .ca-footer {
   text-align: center;
   margin-top: clamp(2rem, 5vw, 4rem);

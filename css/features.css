@@ -19,7 +19,7 @@
   background: url('/grid.svg') center/cover no-repeat;
   opacity: 0.03;
 }
-/* decorative blobs */
+
 .features__blob {
   position: absolute;
   width: clamp(200px, 20vw, 500px);
@@ -39,7 +39,6 @@
   background: var(--accent-light)20;
 }
 
-/* Inner container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -48,7 +47,6 @@
   text-align: center;
 }
 
-/* Header */
 .features__header {
   margin-bottom: clamp(2rem, 5vh, 4rem);
 }
@@ -62,14 +60,12 @@
   opacity: 0.8;
 }
 
-/* Grid of cards */
 .features__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: clamp(1.5rem, 3vw, 2.5rem);
 }
 
-/* Card base styles */
 .features__card {
   background: rgba(255,255,255,0.05);
   backdrop-filter: blur(10px);
@@ -84,7 +80,6 @@
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-/* Icon wrapper */
 .features__icon-wrapper {
   width: clamp(3rem, 6vw, 4rem);
   height: clamp(3rem, 6vw, 4rem);
@@ -105,7 +100,6 @@
   color: var(--white);
 }
 
-/* Card text */
 .features__card-title {
   font-size: clamp(1.25rem, 3vw, 1.5rem);
   font-weight: 700;
